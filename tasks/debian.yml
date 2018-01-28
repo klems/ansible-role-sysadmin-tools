@@ -1,0 +1,18 @@
+---
+
+- name: "[DEBIAN] updating aptitude cache ..."
+  apt:
+    update_cache: yes
+  become: yes
+
+- name: "[DEBIAN] installing sysadmin tools ..."
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ sysadmin_tools }}"
+  become: yes
+
+- name: "[DEBIAN] remove useless packages from cache ..."
+  apt:
+    autoclean: yes
+  become: yes
