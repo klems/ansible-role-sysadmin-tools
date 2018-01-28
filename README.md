@@ -2,6 +2,8 @@ klems.sysadmin-tools
 =========
 [![Build Status](https://travis-ci.org/klems/ansible-role-sysadmin-tools.svg?branch=master)](https://travis-ci.org/klems/ansible-role-sysadmin-tools)
 
+A role that allows you to install a pack of admin tools on a server
+
 Requirements
 ------------
 Ansible == `2.4`
