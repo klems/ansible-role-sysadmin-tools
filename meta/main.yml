@@ -24,6 +24,8 @@ galaxy_info:
   galaxy_tags:
     - linux
     - system
+    - admin
     - tools
+    - install
 
 dependencies: []
